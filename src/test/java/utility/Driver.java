@@ -10,9 +10,9 @@ import java.util.concurrent.TimeUnit;
 public class Driver {
 
     /*
-    Creating a private constructor, so we are closing
-    access to the object of this class from outside the class
-     */
+   Creating a private constructor, so we are closing
+   access to the object of this class from outside the class
+    */
     private Driver(){}
 
     /*
@@ -55,6 +55,7 @@ public class Driver {
                     driverPool.get().manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
                     break;
 
+
             }
         }
 
@@ -72,4 +73,10 @@ public class Driver {
         }
     }
 
+    public static WebDriver get() {
+        return null;
+    }
+
+    public static void get(String login_url) {
+    }
 }
